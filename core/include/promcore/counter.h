@@ -75,6 +75,8 @@ private:
 class CounterDouble : public CounterType<double>{
  public:
 
+  using typename CounterType<double>::value_type;
+
   /// \brief Create a counter that starts at 0.
   CounterDouble() = default;
 };
@@ -96,6 +98,8 @@ class CounterDouble : public CounterType<double>{
 /// a data race.
 class CounterInt : public CounterType<int64_t> {
 public:
+
+  using typename CounterType<int64_t>::value_type;
 
   /// \brief Create a counter that starts at 0.
   CounterInt() = default;
