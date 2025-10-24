@@ -26,6 +26,9 @@ namespace promcore {
 template <typename TYPE>
 class  CounterType {
 public:
+
+  using value_type = TYPE;
+
   static const MetricType metric_type{MetricType::Counter};
 
   /// \brief Create a counter that starts at 0.
