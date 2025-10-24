@@ -25,6 +25,8 @@ template <typename TYPE>
 class GaugeType {
 public:
 
+  using value_type = TYPE;
+
   static const MetricType metric_type{MetricType::Gauge};
 
   /// \brief Create a gauge that starts at 0.
