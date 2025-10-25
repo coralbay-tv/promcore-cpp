@@ -22,7 +22,7 @@ namespace promcore {
 /// The class is thread-safe. No concurrent call to any API of this type causes
 /// a data race.
 template <typename TYPE>
-class GaugeType {
+class PROMCORE_CPP_CORE_EXPORT GaugeType {
 public:
 
   using value_type = TYPE;
@@ -80,8 +80,6 @@ private:
 class PROMCORE_CPP_CORE_EXPORT GaugeDouble : public GaugeType<double> {
  public:
 
-  using typename GaugeType<double>::value_type;
-
   /// \brief Create a gauge that starts at 0.
   GaugeDouble() = default;
 
@@ -104,8 +102,6 @@ class PROMCORE_CPP_CORE_EXPORT GaugeDouble : public GaugeType<double> {
 /// a data race.
 class PROMCORE_CPP_CORE_EXPORT GaugeInt : public GaugeType<int64_t> {
 public:
-
-  using typename GaugeType<int64_t>::value_type;
 
   /// \brief Create a gauge that starts at 0.
   GaugeInt() = default;

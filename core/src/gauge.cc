@@ -66,7 +66,7 @@ ClientMetric GaugeType<TYPE>::Collect() const {
   return metric;
 }
 
-template class PROMCORE_CPP_CORE_EXPORT GaugeType<double>;
-template class PROMCORE_CPP_CORE_EXPORT GaugeType<int64_t>;
+template class GaugeType<double>;
+template class GaugeType<int64_t>;
 
 }  // namespace promcore

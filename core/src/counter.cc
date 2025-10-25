@@ -36,7 +36,7 @@ ClientMetric CounterType<TYPE>::Collect() const {
   return metric;
 }
 
-template class PROMCORE_CPP_CORE_EXPORT CounterType<double>;
-template class PROMCORE_CPP_CORE_EXPORT CounterType<int64_t>;
+template class CounterType<double>;
+template class CounterType<int64_t>;
 
 }  // namespace promcore
