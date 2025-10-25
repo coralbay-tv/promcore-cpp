@@ -24,7 +24,7 @@ namespace promcore {
 /// The class is thread-safe. No concurrent call to any API of this type causes
 /// a data race.
 template <typename TYPE>
-class  CounterType {
+class PROMCORE_CPP_CORE_EXPORT CounterType {
 public:
 
   using value_type = TYPE;
@@ -75,8 +75,6 @@ private:
 class CounterDouble : public CounterType<double>{
  public:
 
-  using typename CounterType<double>::value_type;
-
   /// \brief Create a counter that starts at 0.
   CounterDouble() = default;
 };
@@ -98,8 +96,6 @@ class CounterDouble : public CounterType<double>{
 /// a data race.
 class CounterInt : public CounterType<int64_t> {
 public:
-
-  using typename CounterType<int64_t>::value_type;
 
   /// \brief Create a counter that starts at 0.
   CounterInt() = default;
