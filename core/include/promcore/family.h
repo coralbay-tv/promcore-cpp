@@ -14,11 +14,11 @@
 #include "promcore/labels.h"
 #include "promcore/metric_family.h"
 
-// IWYU pragma: no_include "prometheus/counter.h"
-// IWYU pragma: no_include "prometheus/gauge.h"
-// IWYU pragma: no_include "prometheus/histogram.h"
-// IWYU pragma: no_include "prometheus/info.h"
-// IWYU pragma: no_include "prometheus/summary.h"
+// IWYU pragma: no_include "promcore/counter.h"
+// IWYU pragma: no_include "promcore/gauge.h"
+// IWYU pragma: no_include "promcore/histogram.h"
+// IWYU pragma: no_include "promcore/info.h"
+// IWYU pragma: no_include "promcore/summary.h"
 
 namespace promcore {
 

@@ -91,7 +91,7 @@ class PROMCORE_CPP_CORE_EXPORT Histogram {
 ///
 /// \code
 /// auto registry = std::make_shared<Registry>();
-/// auto& histogram_family = prometheus::BuildHistogram()
+/// auto& histogram_family = promcore::BuildHistogram()
 ///                              .Name("some_name")
 ///                              .Help("Additional description.")
 ///                              .Labels({{"key", "value"}})

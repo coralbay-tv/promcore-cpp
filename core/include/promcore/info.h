@@ -44,7 +44,7 @@ class PROMCORE_CPP_CORE_EXPORT Info {
 ///
 /// \code
 /// auto registry = std::make_shared<Registry>();
-/// auto& info_family = prometheus::BuildInfo()
+/// auto& info_family = promcore::BuildInfo()
 ///                            .Name("some_name")
 ///                            .Help("Additional description.")
 ///                            .Labels({{"key", "value"}})

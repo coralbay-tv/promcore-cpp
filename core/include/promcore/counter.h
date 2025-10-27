@@ -109,7 +109,7 @@ public:
 ///
 /// \code
 /// auto registry = std::make_shared<Registry>();
-/// auto& counter_family = prometheus::BuildCounter()
+/// auto& counter_family = promcore::BuildCounter()
 ///                            .Name("some_name")
 ///                            .Help("Additional description.")
 ///                            .Labels({{"key", "value"}})
