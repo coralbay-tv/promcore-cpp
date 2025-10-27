@@ -7,7 +7,7 @@ endif()
 project(promcore-cpp
   VERSION 0.0.1
   DESCRIPTION "Prometheus Core Client Library for Modern C++"
-  HOMEPAGE_URL "https://github.com/coralbay-tv/promcore"
+  HOMEPAGE_URL "https://github.com/coralbay-tv/promcore-cpp"
 )
 
 include(GenerateExportHeader)

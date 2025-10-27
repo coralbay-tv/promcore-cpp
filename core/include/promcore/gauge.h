@@ -119,7 +119,7 @@ public:
 ///
 /// \code
 /// auto registry = std::make_shared<Registry>();
-/// auto& gauge_family = prometheus::BuildGauge()
+/// auto& gauge_family = promcore::BuildGauge()
 ///                          .Name("some_name")
 ///                          .Help("Additional description.")
 ///                          .Labels({{"key", "value"}})

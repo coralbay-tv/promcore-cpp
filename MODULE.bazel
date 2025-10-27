@@ -1,7 +1,7 @@
 module(
     name = "promcore-cpp",
     version = "0.0.1",
-    repo_name = "com_github_jupp0r_prometheus_cpp",
+    repo_name = "com_github_coralbay-tv_promcore-cpp",
 )
 
 bazel_dep(name = "curl", version = "8.8.0.bcr.3")

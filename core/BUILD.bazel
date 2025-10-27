@@ -3,7 +3,7 @@ load("//bazel:export_header.bzl", "generate_dummy_export_header")
 generate_dummy_export_header(
     name = "export_header",
     basename = "PROMCORE_CPP_CORE",
-    header = "include/prometheus/detail/core_export.h",
+    header = "include/promcore/detail/core_export.h",
 )
 
 cc_library(

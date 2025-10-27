@@ -13,7 +13,7 @@ generate_dummy_export_header = rule(
         "header": attr.string(mandatory = True),
         "_template": attr.label(
             allow_single_file = True,
-            default = Label("@com_github_jupp0r_prometheus_cpp//bazel:dummy_export.h.tpl"),
+            default = Label("@com_github_coralbay-tv_promcore_cpp//bazel:dummy_export.h.tpl"),
         ),
     },
     implementation = _generate_dummy_export_header_impl,
